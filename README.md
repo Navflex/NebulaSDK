@@ -1,48 +1,90 @@
-## Vzense Nebula Software Develop Kit
+# Vzense Nebula Software Development Kit (SDK)
 
-### Supported Devices
+A comprehensive software development kit for Vzense Time-of-Flight (ToF) depth cameras, providing APIs and tools for developing applications with depth sensing capabilities.
 
-- DS77 (DS77_S_20220530_B16  and later) 
-- DS77C (DS77_S_20220530_B16  and later )
-- DS86 (DS86_R_20230321  and later )
-- DCAM650 (DCAM650_R_20231214_B06  and later )
+## 📋 Table of Contents
 
-### Supported Platform
+- [Supported Devices](#supported-devices)
+- [Supported Platforms](#supported-platforms)
+- [Quick Start](#quick-start)
+- [SDK Structure](#sdk-structure)
+- [Getting Help](#getting-help)
 
-- AArch64
-- Ubuntu16.04 (x86_64 platform), e.g. intel i5,i7
-- Ubuntu18.04 (x86_64 platform), e.g. intel i5,i7
-- Windows 10/11
+## 🎯 Supported Devices
 
-### Folder description
--  **AArch64** 
+The following Vzense ToF cameras are supported:
 
-    Ubuntu18.04 arm64 SDK package that is developed for personal computer platform(arm64), use standard compiler aarch64-linux-gnu(v7.5.0)
-   
--  **Ubuntu16.04** 
-   
-   Ubuntu16.04 PC SDK package that is developed for personal computer platform(x86_64), use standard compiler x86_64-linux-gnu(v5.4.0)
-   
--  **Ubuntu18.04** 
+| Device Model | Minimum Firmware Version |
+|--------------|-------------------------|
+| **DS77** | DS77_S_20220530_B16 and later |
+| **DS77C** | DS77_S_20220530_B16 and later |
+| **DS86** | DS86_R_20230321 and later |
+| **DCAM650** | DCAM650_R_20231214_B06 and later |
 
-    Ubuntu18.04 PC SDK package that is developed for personal computer platform(x86_64), use standard compiler x86_64-linux-gnu(v7.5.0)
-    Ubuntu18.04 SDK package compatible with Ubuntu20.04
+## 💻 Supported Platforms
 
--  **Windows** 
+Choose the appropriate SDK package for your development environment:
 
-    Windows PC SDK package that is developed for personal computer platform(x86_64), use standard compiler VS2017
+| Platform | Architecture | Compiler | Notes |
+|----------|--------------|----------|-------|
+| **AArch64** | ARM64 | aarch64-linux-gnu (v7.5.0) | For ARM64-based systems |
+| **Ubuntu 16.04** | x86_64 | x86_64-linux-gnu (v5.4.0) | For Intel/AMD 64-bit systems |
+| **Ubuntu 18.04** | x86_64 | x86_64-linux-gnu (v7.5.0) | Compatible with Ubuntu 20.04 |
+| **Windows 10/11** | x86_64 | Visual Studio 2017 | For Windows development |
 
+## 🚀 Quick Start
 
-### Summary Of The Guidelines
+1. **Choose your platform**: Select the appropriate SDK folder based on your operating system
+2. **Install dependencies**: Follow the platform-specific installation instructions
+3. **Run samples**: Explore the provided sample projects to understand the API usage
+4. **Build your application**: Use the samples as a starting point for your own projects
 
-- Choose the right base branch;
+## 📁 SDK Structure
 
-- Include sample project and documentation;
+Each platform folder contains the following components:
 
-### Resources
+### Core Components
+- **Include/**: Header files for C/C++ development
+- **Lib/**: Library files and drivers
+- **Samples/**: Example projects demonstrating various features
+- **Document/**: User guides and documentation
 
-- Homepage: https://www.vzense.com/
-- Order: https://www.vzense.com/
-- Docs: [Vzense ToF Sensor and Application](https://vzense.com/Downloads.html)
-- Develop tools: https://github.com/Vzense , https://gitee.com/Vzense
-- Q&A forum: [FAQ - 青岛维感科技有限公司 (vzense.com)](https://vzense.com/Newsdispalys_faq.html)
+### Sample Categories
+- **Base/**: Fundamental API usage examples
+- **OpenCV/**: Computer vision integration examples
+- **Multi-threading**: Concurrent device handling examples
+
+### Additional Resources
+- **Python/**: Python bindings and examples
+- **CSharp/**: .NET framework examples
+- **ROS/**: Robot Operating System integration
+- **ROS2/**: ROS2 integration examples
+
+## 🔧 Development Guidelines
+
+- **Choose the right branch**: Ensure you're using the correct SDK version for your device
+- **Start with samples**: Use the provided sample projects as reference
+- **Check documentation**: Refer to the user guides for detailed API information
+- **Test thoroughly**: Verify compatibility with your specific hardware and firmware versions
+
+## 📚 Resources
+
+### Official Resources
+- **Company Website**: [https://www.vzense.com/](https://www.vzense.com/)
+- **Documentation**: [Vzense ToF Sensor and Application](https://vzense.com/Downloads.html)
+- **Purchase**: [https://www.vzense.com/](https://www.vzense.com/)
+
+### Development Tools
+- **GitHub**: [https://github.com/Vzense](https://github.com/Vzense)
+- **Gitee**: [https://gitee.com/Vzense](https://gitee.com/Vzense)
+
+### Support
+- **FAQ & Support**: [Vzense FAQ](https://vzense.com/Newsdispalys_faq.html)
+
+## 📄 License
+
+Please refer to the [LICENSE](LICENSE) file for licensing information.
+
+---
+
+**Note**: Make sure your device firmware is up to date and compatible with the SDK version you're using. For the best development experience, start with the sample projects and gradually build your own applications.
