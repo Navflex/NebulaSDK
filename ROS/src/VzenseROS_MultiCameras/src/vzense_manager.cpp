@@ -430,7 +430,7 @@ void VzenseManager::sigsegv_handler(int sig) {
 void VzenseManager::checkVzReturnStatus(VzReturnStatus status, const std::string &message_on_fail) {
     if (status == VzReturnStatus::VzRetOK)
         return;
-    ROS_ERROR(message_on_fail.c_str());
+    ROS_ERROR("%s", message_on_fail.c_str());
 }
 
 void VzenseManager::set_sensor_intrinsics() {

@@ -19,7 +19,7 @@
 
 #include <opencv2/opencv.hpp>
 #include "VzenseNebula_api.h"
-#include "VzenseROS_MultiCameras/Vzensetof_roscppConfig.h"
+#include "vzenseros_multicameras/Vzensetof_roscppConfig.h"
 
 using namespace std;
 using namespace cv;

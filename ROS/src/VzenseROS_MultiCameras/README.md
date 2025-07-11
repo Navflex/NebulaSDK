@@ -33,7 +33,7 @@ This ROS package facilitates depth IR and RGB data acquisition and processing fo
     <p align="center"><img src="./doc/img/step1.png" /></p>
 
     ```console
-    cd VzenseROS_MultiCameras
+    cd vzenseros_multicameras
     ```
     <p align="center"><img src="./doc/img/step2.png" /></p>
 
@@ -46,7 +46,7 @@ This ROS package facilitates depth IR and RGB data acquisition and processing fo
  - **Build the VzenseROS package**
   ```console
   cd ../../
-  catkin_make -DCATKIN_WHITELIST_PACKAGES="VzenseROS_MultiCameras"  
+  catkin_make -DCATKIN_WHITELIST_PACKAGES="vzenseros_multicameras"  
   ```
   <p align="center"><img src="./doc/img/step5.png" /></p>
 
@@ -63,7 +63,7 @@ This ROS package facilitates depth IR and RGB data acquisition and processing fo
 
 - **Starting camera node**
     ```console
-    roslaunch VzenseROS_MultiCameras vzense_camera.launch
+    roslaunch vzenseros_multicameras vzense_camera.launch
     ```
     <p align="center"><img src="./doc/img/step6.png" /></p>
 
@@ -98,7 +98,7 @@ This ROS package facilitates depth IR and RGB data acquisition and processing fo
     Rviz can only show one topic
 
     ```console
-    roslaunch VzenseROS_MultiCameras vzense_pointCloudxyz.launch
+    roslaunch vzenseros_multicameras vzense_pointCloudxyz.launch
     ```
     <p align="center"><img src="./doc/img/step10.png" /></p>
 
@@ -111,7 +111,7 @@ This ROS package facilitates depth IR and RGB data acquisition and processing fo
     Rviz can only show one topic
 
     ```console
-    roslaunch VzenseROS_MultiCameras vzense_pointCloudxyzrgb.launch
+    roslaunch vzenseros_multicameras vzense_pointCloudxyzrgb.launch
     ```
     <p align="center"><img src="./doc/img/step12.png" /></p>
 

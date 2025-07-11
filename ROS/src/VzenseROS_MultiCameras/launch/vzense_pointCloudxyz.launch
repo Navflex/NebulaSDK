@@ -1,4 +1,4 @@
 <launch>
-    <include file="$(find VzenseROS_MultiCameras)/launch/pointCloudxyz_camera1.launch"/>
-    <include file="$(find VzenseROS_MultiCameras)/launch/pointCloudxyz_camera2.launch"/>
+    <include file="$(find vzenseros_multicameras)/launch/pointCloudxyz_camera1.launch"/>
+    <include file="$(find vzenseros_multicameras)/launch/pointCloudxyz_camera2.launch"/>
 </launch>

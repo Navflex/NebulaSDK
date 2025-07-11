@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(VzenseROS_MultiCameras)
+if(POLICY CMP0048)
+  cmake_policy(SET CMP0048 NEW)
+endif()
+project(vzenseros_multicameras)
 
 ## Add support for C++11, supported in ROS melodic and newer
 add_definitions(-std=c++11)
