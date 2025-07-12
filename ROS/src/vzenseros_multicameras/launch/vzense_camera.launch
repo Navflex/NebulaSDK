@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find vzenseros_multicameras)/launch/camera1.launch"/>
+    <include file="$(find vzenseros_multicameras)/launch/camera2.launch"/>
+</launch>
