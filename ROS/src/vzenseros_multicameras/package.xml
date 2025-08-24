@@ -4,7 +4,7 @@
   <version>1.0.1</version>
   <description>vzenseros_multicameras package</description>
   <maintainer email="info@vzense.com">vzense</maintainer>
-  <license>TODO</license>
+  <license>NavFlex Inc.</license>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
